@@ -1,5 +1,3 @@
-
-
 # CoWIN Dashboard
 
 A responsive and dynamic React-based dashboard to visualize COVID-19 vaccination statistics using charts from the `recharts` library. This project displays the latest data for:
@@ -8,53 +6,41 @@ A responsive and dynamic React-based dashboard to visualize COVID-19 vaccination
 - **Vaccination by Gender**
 - **Vaccination by Age Group**
 
-<br/>
+### Live Demo
 
-### Live Preview
-
-<div align="center">
-  <img src="https://assets.ccbp.in/frontend/content/react-js/cowin-dashbaord-output.gif" alt="cowin-dashboard-success-view" width="70%" />
-</div>
-
-<br/>
-
-### Failure View
-
-<div align="center">
-  <img src="https://assets.ccbp.in/frontend/content/react-js/cowin-dashbaord-failure-view-output.gif" alt="cowin-dashboard-failure-view" width="70%" />
-</div>
+Check out the live application here: [CoWIN Dashboard](https://chiragcowin.ccbp.tech/)
 
 ---
 
-## Tech Stack
+## Repository Information
 
-- **React JS**
-- **recharts** for data visualization
-- **CSS** for component styling
-- **Loader** from `react-loader-spinner` for loading state
+This project is developed using the following technologies:
+- **JavaScript** (62.5%)
+- **HTML** (20.2%)
+- **CSS** (17.3%)
 
----
-
-## Getting Started
-
-1. Clone the repository  
-   ```bash
-   git clone <repo-url>
-   cd cowin-dashboard
-   ```
-
-2. Install dependencies  
-   ```bash
-   npm install
-   ```
-
-3. Start the application  
-   ```bash
-   npm start
-   ```
+It provides real-time vaccination data fetched from the API: `https://apis.ccbp.in/covid-vaccination-data`. It features a bar chart for last 7 days' vaccinations, pie charts for vaccinations categorized by gender and age, as well as a failure view for API errors.
 
 ---
 
+### Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/chiragSahani/cowinDashboard.git
+   cd cowinDashboard
+2.Install dependencies
+
+```bash
+npm install
+```
+
+Start the application
+
+```bash
+
+npm start
+```
 ## Features
 
 - Fetches real-time vaccination data from the API: `https://apis.ccbp.in/covid-vaccination-data`
