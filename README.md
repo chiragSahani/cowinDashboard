@@ -1,7 +1,146 @@
-In this project, let's build a **CoWIN Dashboard** by applying the concepts we have learned till now.
 
-### Refer to the images below:
 
+# CoWIN Dashboard
+
+A responsive and dynamic React-based dashboard to visualize COVID-19 vaccination statistics using charts from the `recharts` library. This project displays the latest data for:
+
+- **Vaccination Coverage (Last 7 Days)**
+- **Vaccination by Gender**
+- **Vaccination by Age Group**
+
+<br/>
+
+### Live Preview
+
+<div align="center">
+  <img src="https://assets.ccbp.in/frontend/content/react-js/cowin-dashbaord-output.gif" alt="cowin-dashboard-success-view" width="70%" />
+</div>
+
+<br/>
+
+### Failure View
+
+<div align="center">
+  <img src="https://assets.ccbp.in/frontend/content/react-js/cowin-dashbaord-failure-view-output.gif" alt="cowin-dashboard-failure-view" width="70%" />
+</div>
+
+---
+
+## Tech Stack
+
+- **React JS**
+- **recharts** for data visualization
+- **CSS** for component styling
+- **Loader** from `react-loader-spinner` for loading state
+
+---
+
+## Getting Started
+
+1. Clone the repository  
+   ```bash
+   git clone <repo-url>
+   cd cowin-dashboard
+   ```
+
+2. Install dependencies  
+   ```bash
+   npm install
+   ```
+
+3. Start the application  
+   ```bash
+   npm start
+   ```
+
+---
+
+## Features
+
+- Fetches real-time vaccination data from the API: `https://apis.ccbp.in/covid-vaccination-data`
+- Displays:
+  - Bar chart for last 7 days’ dose-wise vaccinations
+  - Pie charts for vaccinations categorized by **gender** and **age**
+- Loader animation during API request
+- Graceful error handling with a failure view on network/API failure
+
+---
+
+## Component Structure
+
+<div align="center">
+  <img src="https://assets.ccbp.in/frontend/content/react-js/cowin-dashbaord-component-structure-breakdown.png" alt="component-structure" width="100%" />
+</div>
+
+---
+
+## API Response Structure
+
+```json
+{
+  "last_7_days_vaccination": [
+    {
+      "vaccine_date": "30th Jul",
+      "dose_1": 3757930,
+      "dose_2": 1817805
+    }
+  ],
+  "vaccination_by_age": [
+    {
+      "age": "18-44",
+      "count": 482792375
+    }
+  ],
+  "vaccination_by_gender": [
+    {
+      "count": 4809680,
+      "gender": "Male"
+    }
+  ]
+}
+```
+
+---
+
+## Assets Used
+
+- Logo: [cowin-logo.png](https://assets.ccbp.in/frontend/react-js/cowin-logo.png)
+- Failure View: [api-failure-view.png](https://assets.ccbp.in/frontend/react-js/api-failure-view.png)
+
+---
+
+## Styling & Design
+
+- **Fonts**: Roboto
+- **Colors**:  
+  `#161625`, `#2cc6c6`, `#cbd5e1`, `#1c1c2b`, `#2d87bb`, `#a3df9f`, `#64c2a6`, `#94a3b8`, `#f54394`, `#5a8dee`
+
+---
+
+## Folder Structure
+
+```
+src/
+│
+├── components/
+│   ├── CowinDashboard/
+│   ├── VaccinationCoverage/
+│   ├── VaccinationByGender/
+│   └── VaccinationByAge/
+│
+├── App.js
+└── index.js
+```
+
+---
+
+## License
+
+This project is for educational and demonstration purposes.
+
+--- 
+
+Let me know if you'd like to add badges, deployment links, or contributor info too.
 <br/>
 <div style="text-align: center;">
     <img src="https://assets.ccbp.in/frontend/content/react-js/cowin-dashbaord-output.gif" alt="" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
